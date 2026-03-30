@@ -8,7 +8,7 @@
     "tag": "Best Seller",
     "tagType": "warning",
     "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
-    "icon": "/products/writing_2327400 1.png"
+    "icon": "/products/writing_2327400_1.png"
   },
   {
     "id": 2,
@@ -30,7 +30,7 @@
     "tag": "New",
     "tagType": "success",
     "features": ["10M+ assets", "Commercial use", "No attribution"],
-    "icon": "/products/camera_8775444 1.png"
+    "icon": "/products/camera_8775444_1.png"
   },
   {
     "id": 4,
