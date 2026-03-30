@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Stats = () => {
   return (
     <div id="features" className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-12 px-6 lg:px-20 grid grid-cols-1 md:grid-cols-3 text-white text-center gap-6">

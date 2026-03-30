@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Navbar = ({ cart, setActiveTab }) => {
   return (
     <nav className="flex justify-between items-center text-center lg:text-left flex-wrap px-6 lg:px-20 py-4 sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b transition-all duration-300">

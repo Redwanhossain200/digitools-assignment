@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Pricing = () => {
   return (
     <section id="pricing" className="bg-gray-100 py-20 px-4">
@@ -10,7 +8,6 @@ const Pricing = () => {
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 items-stretch justify-center">
-          {/* Starter Plan */}
           <div className="flex-1 flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-gray-100 group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-purple-100">
             <div className="grow">
               <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#7F27FF]">Starter</h3>
@@ -29,7 +26,6 @@ const Pricing = () => {
             <button className="w-full cursor-pointer py-3 px-6 bg-linear-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-2xl transition-all hover:scale-105 hover:shadow-lg mt-4">Get Started Free</button>
           </div>
 
-          {/* Pro Plan (Most Popular) */}
           <div className="relative flex-1 flex flex-col bg-linear-to-b from-[#8B5CF6] to-[#7C3AED] p-8 rounded-3xl shadow-xl text-white md:scale-105 z-10 group transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:brightness-110">
             <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FEF3C6] text-[#BB4D00] text-xs font-bold px-4 py-1.5 rounded-full shadow-md animate-pulse">Most Popular</span>
             <div className="grow">
@@ -51,7 +47,6 @@ const Pricing = () => {
             <button className="w-full cursor-pointer py-3 px-6 bg-white text-[#7C3AED] font-bold rounded-2xl transition-all hover:scale-105 hover:shadow-lg mt-4 group-hover:bg-purple-50">Start Pro Trial</button>
           </div>
 
-          {/* Enterprise Plan */}
           <div className="flex-1 flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-gray-100 group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-purple-100">
             <div className="grow">
               <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#7F27FF]">Enterprise</h3>

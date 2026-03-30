@@ -1,4 +1,3 @@
-import React from 'react';
 import userIcon from '../assets/user.png';
 import packageIcon from '../assets/package.png';
 import rocketIcon from '../assets/rocket.png';

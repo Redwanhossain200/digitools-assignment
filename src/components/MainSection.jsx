@@ -1,5 +1,3 @@
-import React from 'react';
-
 const MainSection = ({ products, cart, activeTab, addedIds, setActiveTab, handleAddToCart, handleRemove, handleCheckout, totalCost, getTagStyles }) => {
   return (
     <section id="products" className="py-20 px-6 lg:px-20 text-center">
@@ -19,7 +17,6 @@ const MainSection = ({ products, cart, activeTab, addedIds, setActiveTab, handle
         >
           Cart ({cart.length})
         </button>
-        {/* Animated background highlighter */}
         <span
           className="absolute top-1.5 left-1.5 bottom-1.5 bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-3xl shadow-md transition-all duration-300"
           style={{

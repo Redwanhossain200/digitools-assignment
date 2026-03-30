@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CTA = () => {
   return (
     <section id="testimonials" className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-20 px-6 text-center text-white">
