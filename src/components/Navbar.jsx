@@ -1,7 +1,7 @@
 const Navbar = ({ cart, setActiveTab }) => {
   return (
     <nav className="flex justify-between items-center text-center lg:text-left flex-wrap px-6 lg:px-20 py-4 sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b transition-all duration-300">
-      <h1 className="text-4xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</h1>
+      <h1 className="text-4xl font-bold bg-linear-to-r from-[#4F39F6] via-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent animate-gradient-text">DigiTools</h1>
       <div className="hidden md:flex gap-8 font-semibold text-gray-600">
         <a href="#products" className="text-[16px] relative group hover:text-[#7F27FF] transition-colors">
           Products

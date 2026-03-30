@@ -4,14 +4,16 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-1">
-            <h2 className="text-white text-3xl font-bold mb-4">DigiTools</h2>
+            <h2 className="bg-linear-to-r from-[#4F39F6] via-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent text-4xl font-bold mb-4 animate-gradient-text">
+              DigiTools
+            </h2>
             <p className="text-sm leading-relaxed max-w-xs">
               Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
             </p>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-5">Product</h3>
+            <h3 className="text-white font-semibold mb-4">Product</h3>
             <ul className="space-y-3 text-sm">
               <li><a href="#" className="hover:text-white transition">Features</a></li>
               <li><a href="#" className="hover:text-white transition">Pricing</a></li>
@@ -21,7 +23,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-5">Company</h3>
+            <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-3 text-sm">
               <li><a href="#" className="hover:text-white transition">About</a></li>
               <li><a href="#" className="hover:text-white transition">Blog</a></li>
@@ -31,7 +33,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-5">Resources</h3>
+            <h3 className="text-white font-semibold mb-4">Resources</h3>
             <ul className="space-y-3 text-sm">
               <li><a href="#" className="hover:text-white transition">Documentation</a></li>
               <li><a href="#" className="hover:text-white transition">Help Center</a></li>
@@ -40,19 +42,16 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-white font-semibold mb-5">Social Links</h3>
-            <div className="flex space-x-3">
-              <button className="w-9 h-9 bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
+          <div className="flex flex-col items-center">
+            <h3 className="text-white font-semibold mb-4">Social Links</h3>
+            <div className="flex justify-center md:justify-start space-x-3">
+              <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
                 <i className="fa-brands fa-instagram"></i>
               </button>
-              <button className="w-9 h-9 bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
+              <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
                 <i className="fa-brands fa-facebook-f text-sm"></i>
               </button>
-              <button className="w-9 h-9 bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
-                <i className="fa-brands fa-twitter text-sm"></i>
-              </button>
-              <button className="w-9 h-9 bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
+              <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
                 <span className="font-bold text-xs">X</span>
               </button>
             </div>

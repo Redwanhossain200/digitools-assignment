@@ -7,7 +7,7 @@ const Pricing = () => {
           <p className="text-gray-500">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 items-stretch justify-center">
+        <div className="flex flex-col md:flex-row gap-10 items-stretch justify-center">
           <div className="flex-1 flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-gray-100 group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-purple-100">
             <div className="grow">
               <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#7F27FF]">Starter</h3>
@@ -23,7 +23,7 @@ const Pricing = () => {
                 <li className="flex items-center text-sm text-gray-600 transition-colors group-hover:text-gray-800"><span className="mr-2 text-green-500">✓</span> 1 project per month</li>
               </ul>
             </div>
-            <button className="w-full cursor-pointer py-3 px-6 bg-linear-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-2xl transition-all hover:scale-105 hover:shadow-lg mt-4">Get Started Free</button>
+            <button className="w-full cursor-pointer py-3 px-6 bg-linear-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-4xl transition-all hover:scale-105 hover:shadow-lg active:scale-95 mt-4">Get Started Free</button>
           </div>
 
           <div className="relative flex-1 flex flex-col bg-linear-to-b from-[#8B5CF6] to-[#7C3AED] p-8 rounded-3xl shadow-xl text-white md:scale-105 z-10 group transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:brightness-110">
@@ -44,7 +44,7 @@ const Pricing = () => {
                 <li className="flex items-center text-sm transition-colors group-hover:text-white"><span className="mr-2">✓</span> Advanced analytics</li>
               </ul>
             </div>
-            <button className="w-full cursor-pointer py-3 px-6 bg-white text-[#7C3AED] font-bold rounded-2xl transition-all hover:scale-105 hover:shadow-lg mt-4 group-hover:bg-purple-50">Start Pro Trial</button>
+            <button className="w-full cursor-pointer py-3 px-6 bg-white text-[#7C3AED] font-bold rounded-4xl transition-all hover:scale-105 hover:shadow-lg mt-4 group-hover:bg-purple-50 active:scale-95">Start Pro Trial</button>
           </div>
 
           <div className="flex-1 flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-gray-100 group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-purple-100">
@@ -64,7 +64,7 @@ const Pricing = () => {
                 <li className="flex items-center text-sm text-gray-600 transition-colors group-hover:text-gray-800"><span className="mr-2 text-green-500">✓</span> Custom branding</li>
               </ul>
             </div>
-            <button className="w-full cursor-pointer py-3 px-6 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold rounded-2xl transition-all hover:scale-105 hover:shadow-lg mt-auto">Contact Sales</button>
+            <button className="w-full cursor-pointer py-3 px-6 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold rounded-4xl transition-all hover:scale-105 hover:shadow-lg active:scale-95 mt-auto">Contact Sales</button>
           </div>
         </div>
       </div>

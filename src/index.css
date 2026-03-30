@@ -16,3 +16,18 @@ html {
 .card {
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.04);
 }
+
+.animate-gradient-text {
+  background-size: 200% auto;
+  animation: gradientMove 3s linear infinite alternate;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
