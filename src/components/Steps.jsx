@@ -1,4 +1,7 @@
 import React from 'react';
+import userIcon from '../assets/user.png';
+import packageIcon from '../assets/package.png';
+import rocketIcon from '../assets/rocket.png';
 
 const Steps = () => {
   return (
@@ -8,9 +11,9 @@ const Steps = () => {
         <p className="text-gray-500 mb-10">Start using premium digital tools in minutes, not hours.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {[
-            { img: '/assets/user.png', num: '01', title: 'Create Account', desc: 'Sign up for free in seconds. No credit card required to get started.' },
-            { img: '/assets/package.png', num: '02', title: 'Choose Products', desc: 'Browse our catalog and select the tools that fit your needs.' },
-            { img: '/assets/rocket.png', num: '03', title: 'Start Creating', desc: 'Download and start using your premium tools immediately.' }
+            { img: userIcon, num: '01', title: 'Create Account', desc: 'Sign up for free in seconds. No credit card required to get started.' },
+            { img: packageIcon, num: '02', title: 'Choose Products', desc: 'Browse our catalog and select the tools that fit your needs.' },
+            { img: rocketIcon, num: '03', title: 'Start Creating', desc: 'Download and start using your premium tools immediately.' }
           ].map((step, idx) => (
             <div key={idx} className="relative bg-white p-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <span className="absolute top-4 right-4 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white text-xs font-bold p-2 rounded-full transition-transform duration-300 group-hover:scale-110">{step.num}</span>
