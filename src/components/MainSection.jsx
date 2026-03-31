@@ -22,7 +22,7 @@ const MainSection = ({ products, cart, activeTab, addedIds, setActiveTab, handle
         <span
           className="absolute top-1.5 left-1.5 bottom-1.5 bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-3xl shadow-md transition-all duration-300"
           style={{
-            width: activeTab === 'products' ? 'calc(50% - 3px)' : 'calc(50% - 3px)',
+            width: 'calc(50% - 3px)',
             transform: activeTab === 'products' ? 'translateX(0)' : 'translateX(calc(100%))',
           }}
         />
@@ -55,20 +55,28 @@ const MainSection = ({ products, cart, activeTab, addedIds, setActiveTab, handle
                     </li>
                   ))}
                 </ul>
+
                 <button
                   onClick={() => handleAddToCart(p)}
-                  className={`btn w-full rounded-4xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-md border-none font-bold tracking-wide transition-all duration-300 ${addedIds.includes(p.id) ? 'bg-green-500 text-white' : 'bg-[#7F27FF] text-white hover:bg-[#6a20d6]'}`}
+                  disabled={addedIds.includes(p.id)}
+                  className={`btn w-full rounded-4xl border-none font-bold tracking-wide transition-all duration-500 shadow-md ${addedIds.includes(p.id)
+                    ? 'bg-green-500 text-white hover:bg-green-500'
+                    : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'
+                    }`}
                 >
                   {addedIds.includes(p.id) ? (
-                    <> <FaCheckCircle className="mr-1.5" /> Added to cart </>
+                    <span className="flex items-center justify-center gap-2 animate-pulse">
+                      <FaCheckCircle /> Added to cart
+                    </span>
                   ) : (
-                    <>Buy Now</>
+                    "Buy Now"
                   )}
                 </button>
               </div>
             ))}
           </div>
         ) : (
+
           <div className="max-w-4xl mx-auto bg-white border rounded-2xl p-6 lg:p-10 text-left transition-all duration-500 transform scale-100">
             <h3 className="text-2xl font-bold mb-6 text-black">Your Cart</h3>
             {cart.length === 0 ? (
@@ -78,7 +86,9 @@ const MainSection = ({ products, cart, activeTab, addedIds, setActiveTab, handle
                 {cart.map(item => (
                   <div key={item.id} className="flex items-center justify-between p-5 bg-gray-50 rounded-2xl border border-gray-100 hover:bg-white transition-colors">
                     <div className="flex items-center gap-5">
-                      <div className="p-3 bg-white rounded-xl shadow-sm border"><img src={item.icon} className="w-8" alt="" /></div>
+                      <div className="p-3 bg-white rounded-xl shadow-sm border">
+                        <img src={item.icon} className="w-8" alt="" />
+                      </div>
                       <div>
                         <h4 className="font-bold text-gray-800">{item.name}</h4>
                         <p className="text-sm font-semibold text-gray-500">${item.price}</p>
@@ -91,7 +101,9 @@ const MainSection = ({ products, cart, activeTab, addedIds, setActiveTab, handle
                   <span className="text-[#627382] font-medium text-[16px]">Total:</span>
                   <span className="text-2xl font-bold text-gray-900">${totalCost}</span>
                 </div>
-                <button onClick={handleCheckout} className="btn rounded-4xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full text-white h-16 text-[16px] font-bold border-none mt-4 transform hover:scale-[1.02] transition-transform shadow-lg">Proceed To Checkout</button>
+                <button onClick={handleCheckout} className="btn rounded-4xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full text-white h-16 text-[16px] font-bold border-none mt-4 transform hover:scale-[1.02] transition-transform shadow-lg">
+                  Proceed To Checkout
+                </button>
               </div>
             )}
           </div>
