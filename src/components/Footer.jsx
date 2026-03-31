@@ -9,7 +9,7 @@ const Footer = () => {
             <h2 className="bg-linear-to-r from-[#4F39F6] via-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent text-4xl font-bold mb-4 animate-gradient-text">
               DigiTools
             </h2>
-            <p className="text-sm leading-relaxed max-w-xs">
+            <p className="text-lg leading-relaxed max-w-xs">
               Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
             </p>
           </div>
