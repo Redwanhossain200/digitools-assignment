@@ -1,7 +1,9 @@
+import { FaInstagram, FaFacebookF } from 'react-icons/fa';
+
 const Footer = () => {
   return (
-    <footer id="faq" className="bg-[#0b1120] text-gray-400 pt-16 text-center lg:text-left">
-      <div className="max-w-7xl mx-auto px-6 pt-16 pb-10">
+    <footer id="faq" className="bg-[#0b1120] text-gray-400 pt-10 text-center lg:text-left">
+      <div className="max-w-7xl mx-auto px-6 pt-10 pb-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-1">
             <h2 className="bg-linear-to-r from-[#4F39F6] via-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent text-4xl font-bold mb-4 animate-gradient-text">
@@ -46,10 +48,10 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Social Links</h3>
             <div className="flex justify-center md:justify-start space-x-3">
               <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
-                <i className="fa-brands fa-instagram"></i>
+                <FaInstagram />
               </button>
               <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
-                <i className="fa-brands fa-facebook-f text-sm"></i>
+                <FaFacebookF />
               </button>
               <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
                 <span className="font-bold text-xs">X</span>

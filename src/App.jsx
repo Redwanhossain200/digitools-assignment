@@ -17,7 +17,7 @@ function App() {
   const [addedIds, setAddedIds] = useState([]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}products.json`)
+    fetch(`./products.json`)
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error("Error loading products:", err));
@@ -66,24 +66,24 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      <ToastContainer position="top-right" autoClose={1500} />
+      <ToastContainer position="top-right" autoClose={1500}></ToastContainer>
 
-      <Navbar cart={cart} setActiveTab={setActiveTab} />
+      <Navbar cart={cart} setActiveTab={setActiveTab}></Navbar>
 
-      <Header />
+      <Header></Header>
 
-      <Stats />
+      <Stats ></Stats>
 
-      <MainSection products={products} cart={cart} activeTab={activeTab} addedIds={addedIds} setActiveTab={setActiveTab} handleAddToCart={handleAddToCart} handleRemove={handleRemove} handleCheckout={handleCheckout} totalCost={totalCost} getTagStyles={getTagStyles} />
+      <MainSection products={products} cart={cart} activeTab={activeTab} addedIds={addedIds} setActiveTab={setActiveTab} handleAddToCart={handleAddToCart} handleRemove={handleRemove} handleCheckout={handleCheckout} totalCost={totalCost} getTagStyles={getTagStyles}></MainSection>
 
-      <Steps />
+      <Steps></Steps>
 
-      <Pricing />
+      <Pricing></Pricing>
 
-      <CTA />
+      <CTA></CTA>
 
-      <Footer />
-    </div>
+      <Footer></Footer>
+    </div >
   )
 }
 

@@ -1,4 +1,5 @@
 import banner from '../assets/banner.png';
+import { FaPlay } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
         </p>
         <div className="mt-7 flex gap-4 justify-center lg:justify-start">
           <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-4xl hover:bg-[#6a20d6] hover:scale-105 border-none px-6 py-3 font-semibold transition-all">Explore Products</button>
-          <button className="btn bg-transparent text-[#9514FA] rounded-4xl border shadow-none border-[#9514FA] px-6 py-3 font-semibold hover:bg-purple-50 transition-colors"><i className="fa-solid fa-play"></i> Watch Demo</button>
+          <button className="btn bg-transparent text-[#9514FA] rounded-4xl border shadow-none border-[#9514FA] px-6 py-3 font-semibold hover:bg-purple-50 transition-colors"><FaPlay /> Watch Demo</button>
         </div>
       </div>
       <div className="flex-1 relative w-full max-w-lg">

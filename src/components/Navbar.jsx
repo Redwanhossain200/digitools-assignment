@@ -1,3 +1,5 @@
+import { FaShoppingCart } from 'react-icons/fa';
+
 const Navbar = ({ cart, setActiveTab }) => {
   return (
     <nav className="flex justify-between items-center text-center lg:text-left flex-wrap px-6 lg:px-20 py-4 sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b transition-all duration-300">
@@ -26,7 +28,7 @@ const Navbar = ({ cart, setActiveTab }) => {
       </div>
       <div className="flex items-center gap-3">
         <div className="relative cursor-pointer transition-transform hover:scale-110" onClick={() => setActiveTab('cart')}>
-          <i className="fa-solid fa-cart-shopping text-xl text-gray-700"></i>
+          <FaShoppingCart className="text-xl text-gray-700" />
           <span className="absolute -top-2 -right-2 bg-[#7F27FF] text-white text-xs px-1.5 rounded-full animate-pulse">{cart.length}</span>
         </div>
         <button className="btn bg-[#7F27FF] text-white hover:bg-[#6a20d6] border-none rounded-4xl px-6 font-semibold transform hover:-translate-y-1 transition-transform">Login</button>

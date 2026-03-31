@@ -1,3 +1,5 @@
+import { FaCheck, FaCheckCircle } from 'react-icons/fa';
+
 const MainSection = ({ products, cart, activeTab, addedIds, setActiveTab, handleAddToCart, handleRemove, handleCheckout, totalCost, getTagStyles }) => {
   return (
     <section id="products" className="py-20 px-6 lg:px-20 text-center">
@@ -49,7 +51,7 @@ const MainSection = ({ products, cart, activeTab, addedIds, setActiveTab, handle
                 <ul className="space-y-2 mb-5 grow">
                   {p.features.map((f, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-gray-600">
-                      <i className="fa-solid fa-check text-[#30B868] transition-transform duration-300 group-hover:scale-110"></i> {f}
+                      <FaCheck className="text-[#30B868] transition-transform duration-300 group-hover:scale-110" /> {f}
                     </li>
                   ))}
                 </ul>
@@ -58,7 +60,7 @@ const MainSection = ({ products, cart, activeTab, addedIds, setActiveTab, handle
                   className={`btn w-full rounded-4xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-md border-none font-bold tracking-wide transition-all duration-300 ${addedIds.includes(p.id) ? 'bg-green-500 text-white' : 'bg-[#7F27FF] text-white hover:bg-[#6a20d6]'}`}
                 >
                   {addedIds.includes(p.id) ? (
-                    <> <i className="fa-solid fa-circle-check mr-1.5"></i> Added to cart </>
+                    <> <FaCheckCircle className="mr-1.5" /> Added to cart </>
                   ) : (
                     <>Buy Now</>
                   )}
