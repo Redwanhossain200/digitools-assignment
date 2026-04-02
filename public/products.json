@@ -8,7 +8,7 @@
     "tag": "Best Seller",
     "tagType": "warning",
     "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
-    "icon": "/products/writing_2327400_1.png"
+    "icon": "./products/writing_2327400_1.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "Popular",
     "tagType": "secondary",
     "features": ["2000+ templates", "Monthly updates", "Commercial license"],
-    "icon": "/products/design-tool.png"
+    "icon": "./products/design-tool.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "New",
     "tagType": "success",
     "features": ["10M+ assets", "Commercial use", "No attribution"],
-    "icon": "/products/camera_8775444_1.png"
+    "icon": "./products/camera_8775444_1.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "Expert",
     "tagType": "primary",
     "features": ["50+ automation's", "API access", "Custom workflows"],
-    "icon": "/products/operation.png"
+    "icon": "./products/operation.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "New",
     "tagType": "accent",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "/products/portfolio.png"
+    "icon": "./products/portfolio.png"
   },
   {
     "id": 6,
@@ -63,6 +63,6 @@
     "tag": "Hot Sale",
     "tagType": "error",
     "features": ["5000+ Assets", "Scheduler included", "Analytics dashboard"],
-    "icon": "/products/social-media.png"
+    "icon": "./products/social-media.png"
   }
 ]
