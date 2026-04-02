@@ -1,15 +1,15 @@
-import { FaInstagram, FaFacebookF } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
     <footer id="faq" className="bg-[#0b1120] text-gray-400 pt-10 text-center lg:text-left">
-      <div className="max-w-7xl mx-auto px-6 pt-10 pb-10">
+      <div className="max-w-6xl mx-auto px-6 pt-10 pb-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-1">
-            <h2 className="bg-linear-to-r from-[#4F39F6] via-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent text-4xl font-bold mb-4 animate-gradient-text">
+            <h2 className="bg-linear-to-r from-[#4F39F6] via-[#9514FA] to-[#4F39F6] bg-clip-text text-transparent text-3xl font-bold mb-3 animate-gradient-text">
               DigiTools
             </h2>
-            <p className="text-lg leading-relaxed max-w-xs">
+            <p className="text-sm leading-relaxed max-w-xs">
               Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
             </p>
           </div>
@@ -44,17 +44,17 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center lg:items-start">
             <h3 className="text-white font-semibold mb-4">Social Links</h3>
             <div className="flex justify-center md:justify-start space-x-3">
-              <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
+              <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 hover:-translate-y-2 hover:shadow-2xl transition">
                 <FaInstagram />
               </button>
-              <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
+              <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 hover:-translate-y-2 hover:shadow-2xl transition">
                 <FaFacebookF />
               </button>
-              <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 transition">
-                <span className="font-bold text-xs">X</span>
+              <button className="w-9 h-9 cursor-pointer bg-white rounded-full flex items-center justify-center text-[#0b1120] hover:bg-gray-200 hover:-translate-y-2 hover:shadow-2xl transition">
+                <FaXTwitter />
               </button>
             </div>
           </div>

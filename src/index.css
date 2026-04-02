@@ -25,9 +25,11 @@ html {
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
+    background-color: #4F39F6;
   }
 
   100% {
     background-position: 100% 50%;
+    background-color: #4F39F6;
   }
 }

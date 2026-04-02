@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Navbar from './components/Navbar'
-import Header from './components/Header'
+import Banner from './components/Banner'
 import Stats from './components/Stats'
 import MainSection from './components/MainSection'
 import Steps from './components/Steps'
@@ -15,6 +15,7 @@ function App() {
   const [cart, setCart] = useState([]);
   const [activeTab, setActiveTab] = useState('products');
   const [addedIds, setAddedIds] = useState([]);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     fetch(`./products.json`)
@@ -31,22 +32,20 @@ function App() {
       setCart([...cart, product]);
       setAddedIds([...addedIds, product.id]);
       toast.success("Added to cart successfully!");
-
-      setTimeout(() => {
-        setAddedIds(prev => prev.filter(id => id !== product.id));
-      }, 2000);
     }
   };
 
   const handleRemove = (id) => {
     const updatedCart = cart.filter(item => item.id !== id);
     setCart(updatedCart);
+    setAddedIds(addedIds.filter(addedId => addedId !== id));
     toast.error("Removed from cart");
   };
 
   const handleCheckout = () => {
     if (cart.length === 0) return toast.warning("Cart is empty!");
     setCart([]);
+    setAddedIds([]);
     toast.success("Proceeding to checkout! Cart cleared.");
   };
 
@@ -54,9 +53,9 @@ function App() {
 
   const getTagStyles = (type) => {
     const styles = {
-      warning: "bg-[#FFF9E5] text-[#FFB800]",
-      secondary: "bg-[#F0EEFF] text-[#7F27FF]",
-      success: "bg-[#E7F9EE] text-[#00C48C]",
+      warning: "bg-[#FEF3C6] text-[#BB4D00]",
+      secondary: "bg-[#E1E7FF] text-[#7F27FF]",
+      success: "bg-[#DBFCE7] text-[#0A883E]",
       primary: "bg-[#EBF2FF] text-[#007AFF]",
       accent: "bg-[#F9EEFF] text-[#B800FF]",
       error: "bg-[#FFE9E9] text-[#FF4D4F]"
@@ -65,25 +64,39 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      <ToastContainer position="top-right" autoClose={1500}></ToastContainer>
+    <>
+      <section className="min-h-screen bg-white">
+        <ToastContainer position="top-right" autoClose={1500}></ToastContainer>
 
-      <Navbar cart={cart} setActiveTab={setActiveTab}></Navbar>
+        <Navbar
+          cart={cart}
+          setActiveTab={setActiveTab}
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+        />
 
-      <Header></Header>
+        <Banner />
+        <Stats />
 
-      <Stats ></Stats>
+        <MainSection
+          products={products}
+          cart={cart}
+          activeTab={activeTab}
+          addedIds={addedIds}
+          setActiveTab={setActiveTab}
+          handleAddToCart={handleAddToCart}
+          handleRemove={handleRemove}
+          handleCheckout={handleCheckout}
+          totalCost={totalCost}
+          getTagStyles={getTagStyles}
+        />
 
-      <MainSection products={products} cart={cart} activeTab={activeTab} addedIds={addedIds} setActiveTab={setActiveTab} handleAddToCart={handleAddToCart} handleRemove={handleRemove} handleCheckout={handleCheckout} totalCost={totalCost} getTagStyles={getTagStyles}></MainSection>
-
-      <Steps></Steps>
-
-      <Pricing></Pricing>
-
-      <CTA></CTA>
-
-      <Footer></Footer>
-    </div >
+        <Steps />
+        <Pricing />
+        <CTA />
+        <Footer />
+      </section>
+    </>
   )
 }
 

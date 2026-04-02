@@ -1,39 +1,23 @@
-# 🎯 DigiTools - Premium Digital AI Tools Marketplace
+# DigiTools - Premium Digital Marketplace
 
-DigiTools is a modern, high-performance web platform designed for users to browse and purchase premium digital tools, AI assets, and creative resources. Built with **React.js** and **Tailwind CSS**, it offers a seamless shopping experience with a clean, professional user interface inspired by Figma.
+DigiTools is a modern high performance web application designed for users to browse and purchase premium digital tools, AI assets, and templates. Built with a focus on seamless user experience it features a dynamic cart system and a responsive sleek interface inspired by professional design standards.
 
 ## 🚀 Live Demo
-[Live Link Here](https://digitoolsplatformpro.netlify.app/)
-
----
-
-## 🛠️ Technology Used
-* **Frontend:** React.js (Vite)
-* **Styling:** Tailwind CSS & DaisyUI
-* **Icons & Fonts:** React Icons, Google Fonts
-* **Notifications:** React-Toastify
-* **Data Handling:** Local JSON Data
-
----
+[Check out the live site here](https://digitools-bd.netlify.app/)
 
 ## ✨ Key Features
 
-### 1. Dynamic Product Browsing & Toggling
-Users can effortlessly switch between the **Product Grid** and the **Shopping Cart** views using a centralized toggle system. The product section features 6–10 premium digital tools with detailed descriptions, pricing models (one-time/monthly), and dynamic tags like "Best Seller" or "Popular."
+* **Dynamic Product Toggling :** Effortlessly switch between the "Products" grid and your "Shopping Cart" with a smooth animated toggle bar.
+* **Smart Shopping Cart :**  Real time cart count updates in the Navbar.
+    * One click "Buy Now" updates the button state to "Added to Cart" for visual confirmation.
+    * Interactive cart management allowing users to remove items or clear the entire cart upon checkout.
+* **Fully Responsive & Interactive UI :** Optimized for all screen sizes (Mobile to Desktop) with custom tailored Tailwind animations and interactive elements like pricing plan highlights and step by step guides.
 
-### 2. Interactive Shopping Cart System
-A fully functional cart that tracks selected items in real-time. Features include:
-* **Live Navbar Update:** The cart count in the navbar increases instantly upon clicking "Buy Now."
-* **Toast Notifications:** Real-time feedback using React-Toastify for adding, removing, or clearing items.
-* **Total Price Calculation:** Automatically calculates the total cost of all added tools.
+## 🛠️ Technologies Used
 
-### 3. Responsive & User-Centric Design
-The application is fully responsive across all devices (Mobile, Tablet, and Desktop). It strictly follows Figma design principles, ensuring professional spacing, color schemes, and meaningful content without the use of "Lorem Ipsum."
-
----
-
-## 📦 Functional Requirements Fulfilled
-- ✅ **One-Click Buy:** Clicking "Buy Now" provides instant visual feedback and updates the cart.
-- ✅ **Selection Management:** Users can remove individual items or clear the entire cart with the "Proceed to Checkout" button.
-- ✅ **JSON Data Integration:** All product info is fetched dynamically from a local JSON file.
-- ✅ **Zero-Waste UI:** Empty cart states are handled with meaningful messages.
+* **Frontend Framework :** React.js
+* **Styling :** Tailwind CSS & DaisyUI
+* **Icons :** React Icons (Font Awesome 6)
+* **Notifications :** React Toastify
+* **Fonts :** Manrope
+* **Data Handling :** Dynamic JSON integration for product listings

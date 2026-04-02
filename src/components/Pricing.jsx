@@ -1,14 +1,14 @@
 const Pricing = () => {
   return (
-    <section id="pricing" className="bg-gray-100 py-20 px-4">
+    <section id="pricing" className="bg-white py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Simple,Transparent Pricing</h2>
           <p className="text-gray-500">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-10 items-stretch justify-center">
-          <div className="flex-1 flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-gray-100 group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-purple-100">
+          <div className="flex-1 flex flex-col cursor-pointer bg-white p-8 rounded-3xl shadow-sm border border-gray-100 group transition-all duration-300 hover:-translate-y-2 hover:shadow-md hover:border-purple-100">
             <div className="grow">
               <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#7F27FF]">Starter</h3>
               <p className="text-gray-400 text-sm mb-6">Perfect for getting started</p>
@@ -26,7 +26,7 @@ const Pricing = () => {
             <button className="w-full cursor-pointer py-3 px-6 bg-linear-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-4xl transition-all hover:scale-105 hover:shadow-lg active:scale-95 mt-4">Get Started Free</button>
           </div>
 
-          <div className="relative flex-1 flex flex-col bg-linear-to-b from-[#8B5CF6] to-[#7C3AED] p-8 rounded-3xl shadow-xl text-white md:scale-105 z-10 group transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:brightness-110">
+          <div className="relative flex-1 flex cursor-pointer flex-col bg-linear-to-b from-[#8B5CF6] to-[#7C3AED] p-8 rounded-3xl shadow-xl text-white md:scale-105 z-10 group transition-all duration-300 hover:-translate-y-2 hover:shadow-md hover:brightness-110">
             <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FEF3C6] text-[#BB4D00] text-xs font-bold px-4 py-1.5 rounded-full shadow-md animate-pulse">Most Popular</span>
             <div className="grow">
               <h3 className="text-2xl font-bold group-hover:text-yellow-100">Pro</h3>
@@ -47,7 +47,7 @@ const Pricing = () => {
             <button className="w-full cursor-pointer py-3 px-6 bg-white text-[#7C3AED] font-bold rounded-4xl transition-all hover:scale-105 hover:shadow-lg mt-4 group-hover:bg-purple-50 active:scale-95">Start Pro Trial</button>
           </div>
 
-          <div className="flex-1 flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-gray-100 group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-purple-100">
+          <div className="flex-1 flex flex-col cursor-pointer bg-white p-8 rounded-3xl shadow-sm border border-gray-100 group transition-all duration-300 hover:-translate-y-2 hover:shadow-md hover:border-purple-100">
             <div className="grow">
               <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#7F27FF]">Enterprise</h3>
               <p className="text-gray-400 text-sm mb-6">For teams and businesses</p>
