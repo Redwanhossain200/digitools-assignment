@@ -2,7 +2,9 @@ import { FaInstagram, FaFacebookF, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <footer id="faq" className="bg-[#0b1120] text-gray-400 pt-10 text-center lg:text-left">
+    <footer
+      id="faq"
+      className="bg-[#0b1120] text-gray-400 pt-10 text-center lg:text-left">
       <div className="max-w-6xl mx-auto px-6 pt-10 pb-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-1">
@@ -10,37 +12,86 @@ const Footer = () => {
               DigiTools
             </h2>
             <p className="text-sm leading-relaxed max-w-xs">
-              Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
+              Premium digital tools for creators, professionals, and businesses.
+              Work smarter with our suite of powerful tools.
             </p>
           </div>
 
           <div>
             <h3 className="text-white font-semibold mb-4">Product</h3>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-white transition">Features</a></li>
-              <li><a href="#" className="hover:text-white transition">Pricing</a></li>
-              <li><a href="#" className="hover:text-white transition">Templates</a></li>
-              <li><a href="#" className="hover:text-white transition">Integrations</a></li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  Features
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  Templates
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  Integrations
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-white transition">About</a></li>
-              <li><a href="#" className="hover:text-white transition">Blog</a></li>
-              <li><a href="#" className="hover:text-white transition">Careers</a></li>
-              <li><a href="#" className="hover:text-white transition">Press</a></li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  Press
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-white font-semibold mb-4">Resources</h3>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-white transition">Documentation</a></li>
-              <li><a href="#" className="hover:text-white transition">Help Center</a></li>
-              <li><a href="#" className="hover:text-white transition">Community</a></li>
-              <li><a href="#" className="hover:text-white transition">Contact</a></li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  Help Center
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  Community
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -63,9 +114,15 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
           <p>&copy; 2026 Digitools. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white">Privacy Policy</a>
-            <a href="#" className="hover:text-white">Terms of Service</a>
-            <a href="#" className="hover:text-white">Cookies</a>
+            <a href="#" className="hover:text-white">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-white">
+              Terms of Service
+            </a>
+            <a href="#" className="hover:text-white">
+              Cookies
+            </a>
           </div>
         </div>
       </div>

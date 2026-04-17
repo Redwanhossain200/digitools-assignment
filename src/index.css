@@ -1,15 +1,15 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin "daisyui";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 * {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #4F39F6 #E5E7EB;
+  scrollbar-color: #4f39f6 #e5e7eb;
   scrollbar-gutter: stable;
 }
 
@@ -25,11 +25,11 @@ html {
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
-    background-color: #4F39F6;
+    background-color: #4f39f6;
   }
 
   100% {
     background-position: 100% 50%;
-    background-color: #4F39F6;
+    background-color: #4f39f6;
   }
 }
